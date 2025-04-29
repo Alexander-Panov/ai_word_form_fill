@@ -1,0 +1,16 @@
+[project]
+name = "ai-word-form-fill"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "azure-ai-documentintelligence>=1.0.2",
+    "docxtpl>=0.19.1",
+    "langchain>=0.3.24",
+    "langchain-anthropic>=0.3.12",
+    "langchain-community>=0.3.22",
+    "openai>=1.76.0",
+    "pydantic>=2.11.3",
+    "python-dotenv>=1.1.0",
+    "tenacity>=9.1.2",
+]

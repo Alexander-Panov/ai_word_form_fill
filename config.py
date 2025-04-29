@@ -1,0 +1,10 @@
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT=os.getenv("AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT")
+AZURE_DOCUMENT_INTELLIGENCE_KEY=os.getenv("AZURE_DOCUMENT_INTELLIGENCE_KEY")
+
+MODEL = "gpt-4.1-mini"

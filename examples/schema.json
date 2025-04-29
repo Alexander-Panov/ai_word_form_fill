@@ -1,0 +1,538 @@
+{
+    "title": "Заявка на грант для стартап-проекта",
+    "sections": [
+        {
+            "id": "application_info",
+            "title": "Информация о заявке",
+            "fields": [
+                {
+                    "id": "application_number",
+                    "description": "Заявка №",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "submission_date",
+                    "description": "Подана",
+                    "type": "date",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "id": "participant_data",
+            "title": "ДАННЫЕ ОБ УЧАСТНИКЕ",
+            "fields": [
+                {
+                    "id": "applicant",
+                    "description": "Заявитель",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "registration_region",
+                    "description": "Регион заявителя по адресу регистрации",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "actual_residence_region",
+                    "description": "Регион заявителя по адресу фактического проживания",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "university_card",
+                    "description": "Карточка ВУЗа",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "university_branch",
+                    "description": "Филиал ВУЗа",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "university_region",
+                    "description": "Регион ВУЗа",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "branch_region",
+                    "description": "Регион филиала ВУЗа",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "education_form",
+                    "description": "Форма обучения",
+                    "type": "select",
+                    "required": true,
+                    "options": [
+                        "Очная",
+                        "Заочная",
+                        "Очно-заочная"
+                    ]
+                },
+                {
+                    "id": "faculty",
+                    "description": "Факультет",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "speciality",
+                    "description": "Специальность",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "course_number",
+                    "description": "Номер курса на момент подачи заявки",
+                    "type": "number",
+                    "required": true
+                },
+                {
+                    "id": "foreign_citizen_status",
+                    "description": "Наличие статуса иностранного гражданина",
+                    "type": "boolean",
+                    "required": true
+                },
+                {
+                    "id": "citizenship",
+                    "description": "Гражданство",
+                    "type": "text",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "id": "startup_project_data",
+            "title": "ДАННЫЕ О СТАРТАП-ПРОЕКТЕ И КВАЛИФИКАЦИИ ЗАЯВИТЕЛЯ",
+            "fields": [
+                {
+                    "id": "project_name",
+                    "description": "Наименование стартап-проекта",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "grant_amount",
+                    "description": "Запрашиваемая сумма гранта (рублей)",
+                    "type": "number",
+                    "required": true
+                },
+                {
+                    "id": "project_duration",
+                    "description": "Срок выполнения работ по проекту",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "thematic_direction",
+                    "description": "Тематическое направление (лот)",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "sub_directions",
+                    "description": "Поднаправления",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "focus_theme",
+                    "description": "Фокусная тематика",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "priority_directions",
+                    "description": "Приоритетные направления отбора стартап-проектов",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "keywords",
+                    "description": "Ключевые слова",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "startup_as_diploma",
+                    "description": "Участие в программе «Стартап как диплом»",
+                    "type": "boolean",
+                    "required": true
+                },
+                {
+                    "id": "entrepreneurial_education",
+                    "description": "Участие в образовательных программах повышения предпринимательской компетентности",
+                    "type": "boolean",
+                    "required": true
+                },
+                {
+                    "id": "youth_lab_participant",
+                    "description": "Заявитель является участником Молодежной лаборатории",
+                    "type": "boolean",
+                    "required": true
+                },
+                {
+                    "id": "youth_lab_organization",
+                    "description": "Наименование организации, на базе которой создана Молодежная лаборатория",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "youth_lab_name",
+                    "description": "Наименование Молодежной лаборатории",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "youth_lab_research_topic",
+                    "description": "Наименование тематики научно-исследовательской работы Молодежной лаборатории",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "advanced_engineering_school_participant",
+                    "description": "Заявитель является участником Передовой инженерной школы",
+                    "type": "boolean",
+                    "required": true
+                },
+                {
+                    "id": "advanced_engineering_school_organization",
+                    "description": "Наименование организации, на базе которой создана Передовая инженерная школа",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "advanced_engineering_school_name",
+                    "description": "Наименование Передовой инженерной школы",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "umnik_contract_number",
+                    "description": "Номер договора (соглашения) по программе «УМНИК»",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "umnik_project_theme",
+                    "description": "Тема проекта по программе «УМНИК»",
+                    "type": "text",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": "project_annotation",
+            "title": "АННОТАЦИЯ ПРОЕКТА",
+            "fields": [
+                {
+                    "id": "project_goals_objectives",
+                    "description": "Цель и задачи проекта",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "final_product_description",
+                    "description": "Описание конечного продукта проекта",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "product_application_area",
+                    "description": "Область применения продукта проекта",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "product_demand",
+                    "description": "Востребованность продукта",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "market_segment",
+                    "description": "Рынок, сегмент рынка",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "potential_consumer",
+                    "description": "Потенциальный потребитель",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "problem_solution",
+                    "description": "Какую проблему решает продукт проекта",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "existing_analogs",
+                    "description": "Существующие аналоги",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "competitive_advantages",
+                    "description": "Конкурентные преимущества",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "project_resources",
+                    "description": "Ресурсы проекта",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "project_implementation_costs",
+                    "description": "Затраты на реализацию проекта",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "project_implementation_plan",
+                    "description": "План реализации проекта",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "team_formation_plans",
+                    "description": "Планы по формированию команды проекта",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "planned_income_method",
+                    "description": "Планируемый способ получения дохода",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "technical_solution",
+                    "description": "Техническое решение проекта",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "technical_solution_advantages",
+                    "description": "Преимущества выбранного технического решения",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "existing_groundwork",
+                    "description": "Имеющийся задел (в том числе научно-технический) для реализации проекта",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "existing_intellectual_property",
+                    "description": "Имеющаяся интеллектуальная собственность",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "patent_protection_plans",
+                    "description": "Планы по патентной защите РИД",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "stage1_plan",
+                    "description": "Этап №1 (длительность этапа - 1 месяц)",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                },
+                {
+                    "id": "stage2_plan",
+                    "description": "Этап №2 (длительность этапа - 11 месяцев)",
+                    "type": "text",
+                    "required": true,
+                    "maxLength": 5000
+                }
+            ]
+        },
+        {
+            "id": "development_institutes_interaction",
+            "title": "ОПЫТ ВЗАИМОДЕЙСТВИЯ ЗАЯВИТЕЛЯ С ДРУГИМИ ИНСТИТУТАМИ РАЗВИТИЯ",
+            "fields": [
+                {
+                    "id": "skolkovo_participant_status",
+                    "description": "Заявителю присвоен статус участника проекта «Сколково»",
+                    "type": "boolean",
+                    "required": true
+                },
+                {
+                    "id": "skolkovo_participant_orn",
+                    "description": "ОРН участника проекта",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "skolkovo_comment",
+                    "description": "Комментарий",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "fiop_financial_support",
+                    "description": "Заявителю предоставлена финансовая поддержка от ФИОП",
+                    "type": "boolean",
+                    "required": true
+                },
+                {
+                    "id": "fiop_financial_company_name",
+                    "description": "Наименование компании",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "fiop_financial_company_inn",
+                    "description": "ИНН компании",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "fiop_educational_support",
+                    "description": "Заявителю предоставлена поддержка в рамках образовательных проектов ФИОП",
+                    "type": "boolean",
+                    "required": true
+                },
+                {
+                    "id": "fiop_educational_company_name",
+                    "description": "Наименование компании",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "fiop_educational_company_inn",
+                    "description": "ИНН компании",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "fiop_technical_support",
+                    "description": "Заявителю предоставлена нормативно-техническая поддержка со стороны ФИОП",
+                    "type": "boolean",
+                    "required": true
+                },
+                {
+                    "id": "fiop_technical_company_name",
+                    "description": "Наименование компании",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "fiop_technical_company_inn",
+                    "description": "ИНН компании",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "fiop_startup_studio_support",
+                    "description": "Заявителю предоставлена поддержка университетских стартапов в рамках деятельности университетских «стартап-студий»",
+                    "type": "boolean",
+                    "required": true
+                },
+                {
+                    "id": "fiop_startup_studio_company_name",
+                    "description": "Наименование компании",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "fiop_startup_studio_company_inn",
+                    "description": "ИНН компании",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "fiop_comment",
+                    "description": "Комментарий",
+                    "type": "text",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": "calendar_plan",
+            "title": "КАЛЕНДАРНЫЙ ПЛАН",
+            "fields": [
+                {
+                    "id": "calendar_plan_items",
+                    "description": "Календарный план проекта",
+                    "type": "complex",
+                    "required": true,
+                    "is_repeated": true,
+                    "fields": [
+                        {
+                            "id": "stage_number",
+                            "description": "№ этапа",
+                            "type": "number",
+                            "required": true
+                        },
+                        {
+                            "id": "stage_name",
+                            "description": "Название этапа календарного плана",
+                            "type": "text",
+                            "required": true
+                        },
+                        {
+                            "id": "stage_duration",
+                            "description": "Длительность этапа, мес",
+                            "type": "number",
+                            "required": true
+                        },
+                        {
+                            "id": "stage_cost",
+                            "description": "Стоимость, руб.",
+                            "type": "number",
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    "id": "total_duration",
+                    "description": "ИТОГО: длительность",
+                    "type": "number",
+                    "required": true
+                },
+                {
+                    "id": "total_cost",
+                    "description": "ИТОГО: стоимость",
+                    "type": "number",
+                    "required": true
+                }
+            ]
+        }
+    ]
+}
