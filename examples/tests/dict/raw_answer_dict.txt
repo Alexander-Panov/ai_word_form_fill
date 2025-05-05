@@ -1,0 +1,32 @@
+```python
+{"position": "аайта", "total_cost": "3000000", "co_financing": "", "requested_amount": "3000000"};
+{"position": "Координатор проекта", "total_cost": "600000", "co_financing": "", "requested_amount": "600000"};
+{"position": "Администратор проекта", "total_cost": "600000", "co_financing": "", "requested_amount": "600000"};
+{"position": "Специалист по пиару", "total_cost": "600000", "co_financing": "", "requested_amount": "600000"};
+{"position": "Менеджер по работе с партнерами", "total_cost": "600000", "co_financing": "", "requested_amount": "600000"};
+{"position": "Координатор блока по работе с организациями имплементаторами - сбер и яндекс", "total_cost": "600000", "co_financing": "", "requested_amount": "600000"};
+{"position": "Руководитель проекта", "total_cost": "678000", "co_financing": "", "requested_amount": "678000"};
+{"position": "Научный руководитель (СВФУ)", "total_cost": "1017000", "co_financing": "508500", "requested_amount": "508500"};
+{"position": "Аналитик данных", "total_cost": "1356000", "co_financing": "678000", "requested_amount": "678000"};
+{"position": "Разработчик", "total_cost": "2712000", "co_financing": "1356000", "requested_amount": "1356000"};
+{"position": "Научный консультант (ИГИиПМНС СО РАН)", "total_cost": "484770", "co_financing": "", "requested_amount": "484770"};
+{"position": "Ментор проекта (АНИЦ)", "total_cost": "484770", "co_financing": "", "requested_amount": "484770"};
+{"position": "Ментор проекта (ЛабИИ)", "total_cost": "484770", "co_financing": "", "requested_amount": "484770"};
+```
+
+Ответ:
+```python
+{"position": "аайта", "total_cost": "3000000", "co_financing": "", "requested_amount": "3000000"};
+{"position": "Координатор проекта", "total_cost": "600000", "co_financing": "", "requested_amount": "600000"};
+{"position": "Администратор проекта", "total_cost": "600000", "co_financing": "", "requested_amount": "600000"};
+{"position": "Специалист по пиару", "total_cost": "600000", "co_financing": "", "requested_amount": "600000"};
+{"position": "Менеджер по работе с партнерами", "total_cost": "600000", "co_financing": "", "requested_amount": "600000"};
+{"position": "Координатор блока по работе с организациями имплементаторами - сбер и яндекс", "total_cost": "600000", "co_financing": "", "requested_amount": "600000"};
+{"position": "Руководитель проекта", "total_cost": "678000", "co_financing": "", "requested_amount": "678000"};
+{"position": "Научный руководитель (СВФУ)", "total_cost": "1017000", "co_financing": "508500", "requested_amount": "508500"};
+{"position": "Аналитик данных", "total_cost": "1356000", "co_financing": "678000", "requested_amount": "678000"};
+{"position": "Разработчик", "total_cost": "2712000", "co_financing": "1356000", "requested_amount": "1356000"};
+{"position": "Научный консультант (ИГИиПМНС СО РАН)", "total_cost": "484770", "co_financing": "", "requested_amount": "484770"};
+{"position": "Ментор проекта (АНИЦ)", "total_cost": "484770", "co_financing": "", "requested_amount": "484770"};
+{"position": "Ментор проекта (ЛабИИ)", "total_cost": "484770", "co_financing": "", "requested_amount": "484770"};
+```

@@ -1,0 +1,150 @@
+{
+	"title": "ФОРМА ЗАЯВКИ на участие в конкурсе на предоставление Т-гранта для некоммерческой организации 4-ая часть",
+	"sections": [
+		{
+			"id": "team",
+			"title": "Команда проекта",
+			"fields": [
+				{
+					"id": "team_members",
+					"description": "Добавь информацию о до 15 ключевых членах команды, включая фамилию, имя, отчество, должность, роль в проекте, образование (наименование образовательной организации и специальность), опыт работы. , предоставь конкретные данные для каждого члена команды",
+					"type": "complex",
+					"required": false,
+					"is_repeated": true,
+					"maxCount": 15,
+					"fields": [
+						{
+							"id": "function_within_project",
+							"description": "Заполняй это поле на основе приложенных материалов о проекте. (например, отвечает за перенос данных в CRM (ассистент отдела)",
+							"type": "text",
+							"required": true,
+							"maxLength": 300
+						},
+						{
+							"id": "name",
+							"description": "ФИО руководителя проекта",
+							"type": "complex",
+							"required": true,
+							"fields": [
+								{
+									"id": "surname",
+									"description": "Фамилия",
+									"type": "text",
+									"required": true,
+									"maxLength": 100
+								},
+								{
+									"id": "name",
+									"description": "Имя",
+									"type": "text",
+									"required": true,
+									"maxLength": 100
+								},
+								{
+									"id": "patronymic",
+									"description": "Отчество",
+									"type": "text",
+									"required": true,
+									"maxLength": 100
+								}
+							]
+						},
+						{
+							"id": "education",
+							"description": "Образование и предоставь чёткое описание образования, необходимое для успешной реализации проекта",
+							"type": "select",
+							"required": true,
+							"options": [
+								"основное общее (9 классов)",
+								"среднее общее (11 классов)",
+								"среднее профессиональное",
+								"незаконченное высшее",
+								"высшее",
+								"более одного высшего"
+							]
+						},
+						{
+							"id": "education_organization",
+							"description": "Укажи образовательные организации и специальности руководителя проекта, с четким описанием каждой из них",
+							"type": "complex",
+							"required": false,
+							"is_repeated": true,
+							"maxCount": 5,
+							"fields": [
+								{
+									"id": "education_organization",
+									"description": "Укажи название образовательной организации, ее профиль деятельности, историю, цели и задачи проекта руководителя проекта",
+									"type": "text",
+									"required": true,
+									"maxLength": 500
+								},
+								{
+									"id": "speciality",
+									"description": "Укажи специальность руководителя проекта",
+									"type": "text",
+									"required": true,
+									"maxLength": 500
+								},
+								{
+									"id": "start_year",
+									"description": "Год начала",
+									"type": "number",
+									"required": true
+								},
+								{
+									"id": "end_year",
+									"description": "Год конца",
+									"type": "number",
+									"required": true
+								}
+							]
+						},
+						{
+							"id": "experience",
+							"description": "Опыт работы: Укажите организацию, вашу должность, год начала работы и год окончания работы. Избегайте общих фраз и предоставьте четкую информацию о вашем опыте работы",
+							"type": "complex",
+							"required": true,
+							"is_repeated": true,
+							"maxCount": 10,
+							"fields": [
+								{
+									"id": "organization",
+									"description": "Укажи название образовательной организации, ее профиль деятельности, историю, цели и задачи проекта руководителя проекта",
+									"type": "text",
+									"required": true,
+									"maxLength": 500
+								},
+								{
+									"id": "speciality",
+									"description": "Укажи специальность руководителя проекта",
+									"type": "text",
+									"required": true,
+									"maxLength": 500
+								},
+								{
+									"id": "start_year",
+									"description": "Год начала",
+									"type": "number",
+									"required": true
+								},
+								{
+									"id": "end_year",
+									"description": "Год конца",
+									"type": "number",
+									"required": true
+								}
+							]
+						},
+						{
+							"id": "type_contract",
+							"description": "Укажите тип заключенного (заключаемого на проект) договора между членом команды проекта и НКО, выберите и скопируйте из предлагаемого списка.: Бессрочный трудовой договор, Срочный трудовой договор, Договор ГПХ, Договор с самозанятым, Договор с ИП",
+							"type": "text",
+							"required": true,
+							"maxLength": 2500
+						}
+					]
+				}
+			]
+		}
+	]
+}

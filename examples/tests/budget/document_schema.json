@@ -1,0 +1,443 @@
+{
+  "title": "",
+  "sections": [
+    {
+      "id": "budget",
+      "title": "Бюджет",
+      "fields": [
+        {
+          "id": "budget_table",
+          "description": "Таблица бюджета проекта",
+          "type": "complex",
+          "required": true,
+          "fields": [
+            {
+              "id": "salary",
+              "description": "Оплата труда",
+              "type": "complex",
+              "required": true,
+              "fields": [
+                {
+                  "id": "salary_staff",
+                  "description": "Оплата труда штатных работников, включая НДФЛ",
+                  "type": "complex",
+                  "required": true,
+                  "is_repeated": true,
+                  "fields": [
+                    {
+                      "id": "position",
+                      "description": "Должность",
+                      "type": "text",
+                      "required": true
+                    },
+                    {
+                      "id": "total_cost",
+                      "description": "Общая стоимость (руб.)",
+                      "type": "number",
+                      "required": true
+                    },
+                    {
+                      "id": "co_financing",
+                      "description": "Софинансирование (если имеется) (руб.)",
+                      "type": "number",
+                      "required": false
+                    },
+                    {
+                      "id": "requested_amount",
+                      "description": "Запрашиваемая сумма (руб.)",
+                      "type": "number",
+                      "required": true
+                    }
+                  ]
+                },
+                {
+                  "id": "salary_contractors",
+                  "description": "Выплаты физическим лицам за оказание ими услуг (выполнение работ) по гражданско-правовым договорам",
+                  "type": "complex",
+                  "required": true,
+                  "is_repeated": true,
+                  "fields": [
+                    {
+                      "id": "service_description",
+                      "description": "Описание услуги/работы",
+                      "type": "text",
+                      "required": true
+                    },
+                    {
+                      "id": "total_cost",
+                      "description": "Общая стоимость (руб.)",
+                      "type": "number",
+                      "required": true
+                    },
+                    {
+                      "id": "co_financing",
+                      "description": "Софинансирование (если имеется) (руб.)",
+                      "type": "number",
+                      "required": false
+                    },
+                    {
+                      "id": "requested_amount",
+                      "description": "Запрашиваемая сумма (руб.)",
+                      "type": "number",
+                      "required": true
+                    }
+                  ]
+                },
+                {
+                  "id": "insurance",
+                  "description": "Страховые взносы",
+                  "type": "complex",
+                  "required": true,
+                  "fields": [
+                    {
+                      "id": "insurance_staff",
+                      "description": "Страховые взносы с выплат штатным работникам",
+                      "type": "complex",
+                      "required": true,
+                      "fields": [
+                        {
+                          "id": "total_cost",
+                          "description": "Общая стоимость (руб.)",
+                          "type": "number",
+                          "required": true
+                        },
+                        {
+                          "id": "co_financing",
+                          "description": "Софинансирование (если имеется) (руб.)",
+                          "type": "number",
+                          "required": false
+                        },
+                        {
+                          "id": "requested_amount",
+                          "description": "Запрашиваемая сумма (руб.)",
+                          "type": "number",
+                          "required": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "insurance_contractors",
+                      "description": "Страховые взносы с выплат физическим лицам по гражданско-правовым договорам",
+                      "type": "complex",
+                      "required": true,
+                      "fields": [
+                        {
+                          "id": "total_cost",
+                          "description": "Общая стоимость (руб.)",
+                          "type": "number",
+                          "required": true
+                        },
+                        {
+                          "id": "co_financing",
+                          "description": "Софинансирование (если имеется) (руб.)",
+                          "type": "number",
+                          "required": false
+                        },
+                        {
+                          "id": "requested_amount",
+                          "description": "Запрашиваемая сумма (руб.)",
+                          "type": "number",
+                          "required": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "travel_expenses",
+              "description": "Командировочные расходы, а также аналогичные расходы по гражданско-правовым договорам",
+              "type": "complex",
+              "required": true,
+              "is_repeated": true,
+              "fields": [
+                {
+                  "id": "travel_description",
+                  "description": "Описание командировочных расходов",
+                  "type": "text",
+                  "required": true
+                },
+                {
+                  "id": "total_cost",
+                  "description": "Общая стоимость (руб.)",
+                  "type": "number",
+                  "required": true
+                },
+                {
+                  "id": "co_financing",
+                  "description": "Софинансирование (если имеется) (руб.)",
+                  "type": "number",
+                  "required": false
+                },
+                {
+                  "id": "requested_amount",
+                  "description": "Запрашиваемая сумма (руб.)",
+                  "type": "number",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "id": "office_expenses",
+              "description": "Офисные расходы (аренда нежилого помещения, коммунальные услуги, услуги связи, услуги банков, электронный документооборот, почтовые услуги, компьютерное оборудование и программное обеспечение, канцтовары и расходные материалы)",
+              "type": "complex",
+              "required": true,
+              "is_repeated": true,
+              "fields": [
+                {
+                  "id": "office_expense_description",
+                  "description": "Описание офисных расходов",
+                  "type": "text",
+                  "required": true
+                },
+                {
+                  "id": "total_cost",
+                  "description": "Общая стоимость (руб.)",
+                  "type": "number",
+                  "required": true
+                },
+                {
+                  "id": "co_financing",
+                  "description": "Софинансирование (если имеется) (руб.)",
+                  "type": "number",
+                  "required": false
+                },
+                {
+                  "id": "requested_amount",
+                  "description": "Запрашиваемая сумма (руб.)",
+                  "type": "number",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "id": "equipment",
+              "description": "Приобретение, аренда специализированного оборудования, инвентаря и сопутствующие расходы",
+              "type": "complex",
+              "required": true,
+              "is_repeated": true,
+              "fields": [
+                {
+                  "id": "equipment_description",
+                  "description": "Описание оборудования/инвентаря",
+                  "type": "text",
+                  "required": true
+                },
+                {
+                  "id": "total_cost",
+                  "description": "Общая стоимость (руб.)",
+                  "type": "number",
+                  "required": true
+                },
+                {
+                  "id": "co_financing",
+                  "description": "Софинансирование (если имеется) (руб.)",
+                  "type": "number",
+                  "required": false
+                },
+                {
+                  "id": "requested_amount",
+                  "description": "Запрашиваемая сумма (руб.)",
+                  "type": "number",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "id": "website_development",
+              "description": "Разработка и поддержка сайтов, информационных систем и иные аналогичные расходы",
+              "type": "complex",
+              "required": true,
+              "is_repeated": true,
+              "fields": [
+                {
+                  "id": "website_description",
+                  "description": "Описание работ по разработке/поддержке",
+                  "type": "text",
+                  "required": true
+                },
+                {
+                  "id": "total_cost",
+                  "description": "Общая стоимость (руб.)",
+                  "type": "number",
+                  "required": true
+                },
+                {
+                  "id": "co_financing",
+                  "description": "Софинансирование (если имеется) (руб.)",
+                  "type": "number",
+                  "required": false
+                },
+                {
+                  "id": "requested_amount",
+                  "description": "Запрашиваемая сумма (руб.)",
+                  "type": "number",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "id": "legal_services",
+              "description": "Оплата юридических, информационных, консультационных услуг и иные аналогичные расходы",
+              "type": "complex",
+              "required": true,
+              "is_repeated": true,
+              "fields": [
+                {
+                  "id": "service_description",
+                  "description": "Описание услуг",
+                  "type": "text",
+                  "required": true
+                },
+                {
+                  "id": "total_cost",
+                  "description": "Общая стоимость (руб.)",
+                  "type": "number",
+                  "required": true
+                },
+                {
+                  "id": "co_financing",
+                  "description": "Софинансирование (если имеется) (руб.)",
+                  "type": "number",
+                  "required": false
+                },
+                {
+                  "id": "requested_amount",
+                  "description": "Запрашиваемая сумма (руб.)",
+                  "type": "number",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "id": "event_expenses",
+              "description": "Расходы на проведение мероприятий",
+              "type": "complex",
+              "required": true,
+              "is_repeated": true,
+              "fields": [
+                {
+                  "id": "event_description",
+                  "description": "Описание мероприятия и расходов",
+                  "type": "text",
+                  "required": true
+                },
+                {
+                  "id": "total_cost",
+                  "description": "Общая стоимость (руб.)",
+                  "type": "number",
+                  "required": true
+                },
+                {
+                  "id": "co_financing",
+                  "description": "Софинансирование (если имеется) (руб.)",
+                  "type": "number",
+                  "required": false
+                },
+                {
+                  "id": "requested_amount",
+                  "description": "Запрашиваемая сумма (руб.)",
+                  "type": "number",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "id": "publishing",
+              "description": "Издательские, полиграфические и сопутствующие расходы",
+              "type": "complex",
+              "required": true,
+              "is_repeated": true,
+              "fields": [
+                {
+                  "id": "publishing_description",
+                  "description": "Описание издательских/полиграфических работ",
+                  "type": "text",
+                  "required": true
+                },
+                {
+                  "id": "total_cost",
+                  "description": "Общая стоимость (руб.)",
+                  "type": "number",
+                  "required": true
+                },
+                {
+                  "id": "co_financing",
+                  "description": "Софинансирование (если имеется) (руб.)",
+                  "type": "number",
+                  "required": false
+                },
+                {
+                  "id": "requested_amount",
+                  "description": "Запрашиваемая сумма (руб.)",
+                  "type": "number",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "id": "other_expenses",
+              "description": "Прочие прямые расходы",
+              "type": "complex",
+              "required": true,
+              "is_repeated": true,
+              "fields": [
+                {
+                  "id": "expense_description",
+                  "description": "Описание прочих расходов",
+                  "type": "text",
+                  "required": true
+                },
+                {
+                  "id": "total_cost",
+                  "description": "Общая стоимость (руб.)",
+                  "type": "number",
+                  "required": true
+                },
+                {
+                  "id": "co_financing",
+                  "description": "Софинансирование (если имеется) (руб.)",
+                  "type": "number",
+                  "required": false
+                },
+                {
+                  "id": "requested_amount",
+                  "description": "Запрашиваемая сумма (руб.)",
+                  "type": "number",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "id": "total",
+              "description": "ИТОГО",
+              "type": "complex",
+              "required": true,
+              "fields": [
+                {
+                  "id": "total_cost",
+                  "description": "Общая стоимость (руб.)",
+                  "type": "number",
+                  "required": true
+                },
+                {
+                  "id": "co_financing",
+                  "description": "Софинансирование (если имеется) (руб.)",
+                  "type": "number",
+                  "required": false
+                },
+                {
+                  "id": "requested_amount",
+                  "description": "Запрашиваемая сумма (руб.)",
+                  "type": "number",
+                  "required": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

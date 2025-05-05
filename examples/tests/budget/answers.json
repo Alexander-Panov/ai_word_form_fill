@@ -1,0 +1,241 @@
+{
+  "field_budget_budget_table": {
+    "salary": {
+      "salary_staff": [
+        {
+          "position": "аайта",
+          "total_cost": "3000000",
+          "co_financing": "0",
+          "requested_amount": "3000000"
+        },
+        {
+          "position": "Координатор проекта",
+          "total_cost": "600000",
+          "co_financing": "0",
+          "requested_amount": "600000"
+        },
+        {
+          "position": "Администратор проекта",
+          "total_cost": "600000",
+          "co_financing": "0",
+          "requested_amount": "600000"
+        },
+        {
+          "position": "Специалист по пиару",
+          "total_cost": "600000",
+          "co_financing": "0",
+          "requested_amount": "600000"
+        },
+        {
+          "position": "Менеджер по работе с партнерами",
+          "total_cost": "600000",
+          "co_financing": "0",
+          "requested_amount": "600000"
+        },
+        {
+          "position": "Координатор блока по работе с организациями имплементаторами - сбер и яндекс",
+          "total_cost": "600000",
+          "co_financing": "0",
+          "requested_amount": "600000"
+        },
+        {
+          "position": "Руководитель проекта",
+          "total_cost": "678000",
+          "co_financing": "0",
+          "requested_amount": "678000"
+        },
+        {
+          "position": "Научный руководитель (СВФУ)",
+          "total_cost": "1017000",
+          "co_financing": "508500",
+          "requested_amount": "508500"
+        },
+        {
+          "position": "Аналитик данных",
+          "total_cost": "1356000",
+          "co_financing": "678000",
+          "requested_amount": "678000"
+        },
+        {
+          "position": "Разработчик",
+          "total_cost": "2712000",
+          "co_financing": "1356000",
+          "requested_amount": "1356000"
+        },
+        {
+          "position": "Научный консультант (ИГИиПМНС СО РАН)",
+          "total_cost": "484770",
+          "co_financing": "0",
+          "requested_amount": "484770"
+        },
+        {
+          "position": "Ментор проекта (АНИЦ)",
+          "total_cost": "484770",
+          "co_financing": "0",
+          "requested_amount": "484770"
+        },
+        {
+          "position": "Ментор проекта (ЛабИИ)",
+          "total_cost": "484770",
+          "co_financing": "0",
+          "requested_amount": "484770"
+        }
+      ],
+      "salary_contractors": [
+        {
+          "service_description": "Выплаты физическим лицам за оказание ими услуг (выполнение работ) по гражданско-правовым договорам, 11 человек",
+          "total_cost": "7217310",
+          "co_financing": "2542500",
+          "requested_amount": "4674810"
+        },
+        {
+          "service_description": "Руководитель проекта, 1 человек",
+          "total_cost": "678000",
+          "co_financing": "0",
+          "requested_amount": "678000"
+        },
+        {
+          "service_description": "Научный руководитель (СВФУ), 1 человек",
+          "total_cost": "1017000",
+          "co_financing": "508500",
+          "requested_amount": "508500"
+        },
+        {
+          "service_description": "Аналитик данных, 2 человека",
+          "total_cost": "1356000",
+          "co_financing": "678000",
+          "requested_amount": "678000"
+        },
+        {
+          "service_description": "Разработчик, 4 человека",
+          "total_cost": "2712000",
+          "co_financing": "1356000",
+          "requested_amount": "1356000"
+        },
+        {
+          "service_description": "Научный консультант (ИГИиПМНС СО РАН)",
+          "total_cost": "484770",
+          "co_financing": "0",
+          "requested_amount": "484770"
+        },
+        {
+          "service_description": "Ментор проекта (АНИЦ)",
+          "total_cost": "484770",
+          "co_financing": "0",
+          "requested_amount": "484770"
+        },
+        {
+          "service_description": "Ментор проекта (ЛабИИ)",
+          "total_cost": "484770",
+          "co_financing": "0",
+          "requested_amount": "484770"
+        }
+      ],
+      "insurance": {
+        "insurance_staff": {
+          "total_cost": "906000",
+          "co_financing": "0",
+          "requested_amount": "906000"
+        },
+        "insurance_contractors": {
+          "total_cost": "2165193",
+          "co_financing": "762750",
+          "requested_amount": "1402443"
+        }
+      }
+    },
+    "travel_expenses": [
+      {
+        "travel_description": "Командировочные расходы, а также аналогичные расходы по гражданско-правовым договорам",
+        "total_cost": "0",
+        "co_financing": "0",
+        "requested_amount": "0"
+      }
+    ],
+    "office_expenses": [
+      {
+        "office_expense_description": "Аренда нежилого помещения, коммунальные услуги, услуги связи, услуги банков, электронный документооборот, почтовые услуги, компьютерное оборудование и программное обеспечение, канцтовары и расходные материалы",
+        "total_cost": "29 541 749,30",
+        "co_financing": "20 541 749,30",
+        "requested_amount": "9 000 000,00"
+      }
+    ],
+    "equipment": [
+      {
+        "equipment_description": "Вычислительный Сервер",
+        "total_cost": "20 541 749,30",
+        "co_financing": "20 541 749,30",
+        "requested_amount": "0,00"
+      },
+      {
+        "equipment_description": "Дополнительные видеокарты (NVidia Tesla H100)",
+        "total_cost": "9 000 000,00",
+        "co_financing": "0,00",
+        "requested_amount": "9 000 000,00"
+      }
+    ],
+    "website_development": [
+      {
+        "website_description": "Разработка и поддержка сайтов, информационных систем и иные аналогичные расходы",
+        "total_cost": "1 600 000,00",
+        "co_financing": "600 000,00",
+        "requested_amount": "1 000 000,00"
+      },
+      {
+        "website_description": "Информационная поддержка проекта",
+        "total_cost": "1 200 000,00",
+        "co_financing": "600 000,00",
+        "requested_amount": "600 000,00"
+      }
+    ],
+    "legal_services": [
+      {
+        "service_description": "Оплата юридических, информационных, консультационных услуг и иные аналогичные расходы",
+        "total_cost": "1 600 000,00",
+        "co_financing": "600 000,00",
+        "requested_amount": "1 000 000,00"
+      },
+      {
+        "service_description": "Запись аудио детского контента",
+        "total_cost": "400 000,00",
+        "co_financing": "0,00",
+        "requested_amount": "400 000,00"
+      },
+      {
+        "service_description": "Информационная поддержка проекта",
+        "total_cost": "1 200 000,00",
+        "co_financing": "600 000,00",
+        "requested_amount": "600 000,00"
+      }
+    ],
+    "event_expenses": [
+      {
+        "event_description": "Расходы на проведение мероприятий",
+        "total_cost": "0",
+        "co_financing": "0",
+        "requested_amount": "0"
+      }
+    ],
+    "publishing": [
+      {
+        "publishing_description": "Издательские, полиграфические и сопутствующие расходы",
+        "total_cost": "0",
+        "co_financing": "0",
+        "requested_amount": "0"
+      }
+    ],
+    "other_expenses": [
+      {
+        "expense_description": "Прочие прямые расходы",
+        "total_cost": "700 000",
+        "co_financing": "0",
+        "requested_amount": "700 000"
+      }
+    ],
+    "total": {
+      "total_cost": "45 130 252,30",
+      "co_financing": "24 446 999,30",
+      "requested_amount": "20 683 253,00"
+    }
+  }
+}

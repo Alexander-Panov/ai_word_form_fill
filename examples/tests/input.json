@@ -1,0 +1,232 @@
+{
+  "title": "Форма заявки на участие в конкурсе на предоставление грантов Президента Российской Федерации на развитие гражданского общества",
+  "sections": [
+    {
+      "id": 1,
+      "title": "О проекте",
+      "fields": [
+        {
+          "id": 1,
+          "description": "Грантовое направление, которому преимущественно соответствует планируемая деятельность по проекту",
+          "type": "select",
+          "required": true,
+          "options": [
+            "социальное обслуживание, социальная поддержка и защита граждан",
+            "охрана здоровья граждан, пропаганда здорового образа жизни",
+            "поддержка семьи, материнства, отцовства и детства",
+            "поддержка молодежных проектов, реализация которых охватывает виды деятельности, предусмотренные статьей 31.1 Федерального закона от 12 января 1996 г. № 7-ФЗ «О некоммерческих организациях»",
+            "поддержка проектов в области науки, образования, просвещения",
+            "сохранение исторической памяти",
+            "защита прав и свобод человека и гражданина, в том числе защита прав заключённых",
+            "охрана окружающей среды и защита животных",
+            "укрепление межнационального и межрелигиозного согласия",
+            "развитие общественной дипломатии и поддержка соотечественников",
+            "развитие институтов гражданского общества"
+          ]
+        },
+        {
+          "id": "1.1",
+          "description": "Тематика грантового направления, которому преимущественно соответствует планируемая деятельность по проекту",
+          "type": "select",
+          "required": false
+        },
+        {
+          "id": 2,
+          "description": "Название проекта, на реализацию которого запрашивается грант",
+          "type": "text",
+          "required": true,
+          "maxLength": 300
+        },
+        {
+          "id": 3,
+          "description": "Краткое описание проекта (деятельности в рамках проекта)",
+          "type": "text",
+          "required": true,
+          "maxLength": 3000
+        },
+        {
+          "id": "3.1",
+          "description": "Полное описание проекта, презентация проекта",
+          "type": "file",
+          "required": false,
+          "maxCount": 5,
+          "fileTypes": [
+            "pdf"
+          ]
+        },
+        {
+          "id": "3.2",
+          "description": "Видео о проекте",
+          "type": "complex",
+          "required": false,
+          "is_repeated": true,
+          "maxCount": 3,
+          "fields": [
+            {
+              "id": "link",
+              "description": "ссылка",
+              "type": "text",
+              "required": false
+            },
+            {
+              "id": "description",
+              "description": "описание",
+              "type": "text",
+              "required": false
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "description": "Теги (ключевые слова, характеризующие деятельность по проекту)",
+          "type": "multiselect",
+          "required": false,
+          "maxCount": 10
+        },
+        {
+          "id": 4,
+          "description": "География проекта",
+          "type": "text",
+          "required": true,
+          "maxLength": 1000
+        },
+        {
+          "id": 5,
+          "description": "Дата начала реализации проекта",
+          "type": "date",
+          "required": true,
+          "dateFormat": "DD.MM.YYYY"
+        },
+        {
+          "id": 6,
+          "description": "Дата окончания реализации проекта",
+          "type": "date",
+          "required": true,
+          "dateFormat": "DD.MM.YYYY"
+        },
+        {
+          "id": 7,
+          "description": "Целевые группы проекта",
+          "type": "text",
+          "required": true,
+          "maxLength": 200,
+          "is_repeated": true
+        },
+        {
+          "id": 8,
+          "description": "Описание проблемы целевой группы, обоснование социальной значимости проекта",
+          "type": "text",
+          "required": true,
+          "maxLength": 5000
+        },
+        {
+          "id": "8.1",
+          "description": "Материалы, подтверждающие наличие проблемы",
+          "type": "file",
+          "required": false,
+          "maxCount": 5,
+          "fileTypes": [
+            "pdf",
+            "doc",
+            "docx",
+            "ppt",
+            "pptx",
+            "xlsx"
+          ]
+        },
+        {
+          "id": 9,
+          "description": "Цель проекта",
+          "type": "text",
+          "required": true,
+          "maxLength": 600,
+          "is_repeated": true
+        },
+        {
+          "id": 10,
+          "description": "Ожидаемые результаты проекта",
+          "type": "complex",
+          "required": true,
+          "is_repeated": true,
+          "fields": [
+            {
+              "id": "target_group",
+              "description": "Целевые группы",
+              "type": "text",
+              "required": true
+            },
+            {
+              "id": "quantitative_results_indicator",
+              "description": "Количественные результаты Наименование показателя",
+              "type": "text",
+              "required": true
+            },
+            {
+              "id": "quantitative_results_value",
+              "description": "Количественные результаты Значение",
+              "type": "number",
+              "required": true
+            },
+            {
+              "id": "qualitative_results",
+              "description": "Качественные результаты и способы их измерения",
+              "type": "text",
+              "required": true
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "description": "Задачи проекта",
+          "type": "text",
+          "required": true,
+          "maxLength": 300,
+          "is_repeated": true
+        },
+        {
+          "id": 12,
+          "description": "Партнеры проекта",
+          "type": "complex",
+          "required": false,
+          "is_repeated": true,
+          "maxCount": 10,
+          "fields": [
+            {
+              "id": "partner",
+              "description": "Партнер",
+              "type": "text",
+              "required": true
+            },
+            {
+              "id": "support_type",
+              "description": "Вид поддержки",
+              "type": "text",
+              "required": true
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "description": "Как будет организовано информационное сопровождение проекта",
+          "type": "text",
+          "required": true,
+          "maxLength": 1000
+        },
+        {
+          "id": 14,
+          "description": "Дальнейшее развитие проекта",
+          "type": "text",
+          "required": false,
+          "maxLength": 2500
+        },
+        {
+          "id": 15,
+          "description": "Источники ресурсного обеспечения проекта в дальнейшем",
+          "type": "text",
+          "required": false,
+          "maxLength": 500
+        }
+      ]
+    }
+  ]
+}
