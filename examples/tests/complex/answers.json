@@ -1,0 +1,112 @@
+
+{
+  "field_team_team_members": [
+    {
+      "function_within_project": "Ведущий разработчик, отвечает за разработку программного обеспечения",
+      "name": {
+        "surname": "Доценко",
+        "name": "Илья",
+        "patronymic": "Владимирович"
+      },
+      "education": "",
+      "education_organization": [],
+      "experience": [
+        {
+          "organization": "ФГБОУ СПбГМТУ, технический вуз",
+          "speciality": "",
+          "start_year": "",
+          "end_year": ""
+        }
+      ],
+      "type_contract": ""
+    },
+    {
+      "function_within_project": "Научный руководитель проекта",
+      "name": {
+        "surname": "Чудный",
+        "name": "Владимир",
+        "patronymic": "Сергеевич"
+      },
+      "education": "высшее",
+      "education_organization": [],
+      "experience": [
+        {
+          "organization": "АО НТЦ ЕЭС, научный сотрудник; СПбПУ (Политех), преподаватель, доцент",
+          "speciality": "к.т.н.",
+          "start_year": "",
+          "end_year": ""
+        }
+      ],
+      "type_contract": ""
+    },
+    {
+      "function_within_project": "Методологическое сопровождение",
+      "name": {
+        "surname": "Николаев",
+        "name": "Алексей",
+        "patronymic": "Валерьевич"
+      },
+      "education": "",
+      "education_organization": [],
+      "experience": [
+        {
+          "organization": "АО АтомЭнергоСбыт, директор по оптовому рынку",
+          "speciality": "",
+          "start_year": "",
+          "end_year": ""
+        }
+      ],
+      "type_contract": ""
+    },
+    {
+      "function_within_project": "Формирование функциональных требований к системе",
+      "name": {
+        "surname": "Чернова",
+        "name": "Дарина",
+        "patronymic": "Константиновна"
+      },
+      "education": "",
+      "education_organization": [],
+      "experience": [
+        {
+          "organization": "АО АтомЭнергоСбыт, руководитель группы по работе с проектами",
+          "speciality": "",
+          "start_year": "",
+          "end_year": ""
+        }
+      ],
+      "type_contract": ""
+    },
+    {
+      "function_within_project": "Проведение финансово-экономической экспертизы, PR",
+      "name": {
+        "surname": "Юдина",
+        "name": "Кира",
+        "patronymic": "Владимировна"
+      },
+      "education": "",
+      "education_organization": [],
+      "experience": [
+        {
+          "organization": "АО АтомЭнергоСбыт, руководитель отдела торговых операций на оптовом рынке",
+          "speciality": "",
+          "start_year": "",
+          "end_year": ""
+        }
+      ],
+      "type_contract": ""
+    },
+    {
+      "function_within_project": "Руководитель проекта",
+      "name": {
+        "surname": "Акимов",
+        "name": "Дмитрий",
+        "patronymic": "Андреевич"
+      },
+      "education": "",
+      "education_organization": [],
+      "experience": [],
+      "type_contract": ""
+    }
+  ]
+}

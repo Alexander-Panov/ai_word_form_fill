@@ -27,6 +27,11 @@ async def test_ai_fill_budget(budget_document_schema: dict, raw_answers_budget: 
     await base_test_ai_fill_form(budget_document_schema, raw_answers_budget, answers_budget)
 
 
+@pytest.mark.asyncio
+async def test_ai_fill_complex(complex_document_schema: dict, raw_answers_complex: list, answers_complex: dict):
+    await base_test_ai_fill_form(complex_document_schema, raw_answers_complex, answers_complex)
+
+
 def test_field_key_generator(input_document_schema: dict):
     results = [prompt for prompt in field_key_generator(input_document_schema)]
     assert len(results) == 20

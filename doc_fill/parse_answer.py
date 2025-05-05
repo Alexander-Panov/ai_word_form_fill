@@ -15,21 +15,15 @@ def parse_answer(field: dict[str, Any], ai_message_text: str) -> str | list | di
     answer = answer.strip()
 
     is_repeated = field.get("is_repeated")
-    if is_repeated:
-        answer = [answer_n.strip() for answer_n in answer.split(';') if answer_n.strip()]
     if field["type"] == "complex":
-        answer = answer if isinstance(answer, list) else [answer]
-        answers = []
-        for answer_n in answer:
-            left_curly_brace = answer_n.find('{') + 1
-            right_curly_brace = answer_n.find('}') + 1
-            if left_curly_brace and right_curly_brace:
-                answers.append(ast.literal_eval(answer_n[left_curly_brace-1:right_curly_brace]))
-        if is_repeated:
-            answer = answers
-        else:
+        left_brace = min(answer.find('{') + 1 or len(answer) + 1, answer.find('[') + 1 or len(answer) + 1) - 1
+        right_brace = max(answer.rfind('}'), answer.rfind(']')) + 1
+        answer = answer[left_brace:right_brace]
+        if answer:
             try:
-                answer = answers[0]
-            except IndexError:
-                answer = {}
+                answer = ast.literal_eval(answer)
+            except (ValueError, SyntaxError):
+                answer = [] if is_repeated else {}
+    elif is_repeated:
+        answer = [answer_n.strip() for answer_n in answer.split(';') if answer_n.strip()]
     return answer

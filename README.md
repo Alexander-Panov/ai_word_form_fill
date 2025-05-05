@@ -51,6 +51,3 @@ uv run python word_fill.py examples/schema.json "examples/Форма ФСИ ст
 ```
 
 ![filled_form.png](images/filled_form.png)
-
-## Ограничения
-* Не работает со сложными полями повторяющимися полями внутри повторяющихся полей

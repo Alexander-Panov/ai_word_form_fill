@@ -72,3 +72,13 @@ def budget_document_schema() -> dict:
 @pytest.fixture(scope="session")
 def complex_document_schema() -> dict:
     return load_json_data("complex/document_schema.json")
+
+
+@pytest.fixture(scope="session")
+def raw_answers_complex() -> dict:
+    return load_json_data("complex/raw_answers.json")
+
+
+@pytest.fixture(scope="session")
+def answers_complex() -> dict:
+    return load_json_data("complex/answers.json")
